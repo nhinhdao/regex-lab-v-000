@@ -21,6 +21,6 @@ end
 
 def valid_phone_number?(phone)
       # phone.all? { |e| e.scan(/.*\d{3}.*\d{3}.*\d{4}$/)}
-      phone.scan(/.*\d{3}.*\d{3}.*\d{4}\D$/) ? true : false
+      phone.scan(/.*\d{3}.*\d{3}.*\d{4}\D/) ? true : false
       # phone.all? .scan(/^.?([0-9]{3}).?([0-9]{3}).?([0-9]{4})$/) ? true : false
 end
